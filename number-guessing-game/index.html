@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async defer></script>
+  </head>
+  <body onload="updateList()">
+    <nav>
+      <h1>Let's Play the Guessing Number Game!</h1>
+    </nav>
+    <form>
+      <!-- submit type input refreshes the page when submitted -->
+      <input type="number" name="num" min="1" max="100">
+      <input type="submit" value="Guess" onclick="processGuess()">
+    </form>
+    <br>
+    <br>
+    <h1>Guesses:</h1>
+    <div id = "Guesses"></div>
+
+  </body>
+</html>
